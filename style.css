@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap');
+*{
+    font-family: 'Pontano Sans', sans-serif;   
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;    
+    display: flex;
+}
+.cta{
+    display: inline-block;
+    padding: 20px 30px;
+    color: black;
+    background-color: transparent;
+    border: 1px solid brown;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+/* Navbar */
+#navbar{    
+    position: fixed;
+    background-color: rgba(191,127,63,0.9);
+    list-style-type: none;
+    text-align: right;
+    padding: 20px;
+    height: 4vh;
+    width: 100%;
+    z-index: 1000;
+}    
+#navbar li{
+    list-style: none;
+}
+#navbar a{
+    padding: 10px 30px;
+    list-style: none;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#navbar .navbar ul {
+    margin: 2vh;
+    padding: 5px;
+    text-transform: uppercase;
+    list-style: none;
+    position: absolute;
+    height: 4vh;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+/* End Navbar */
+
+/* Welcome Section */
+#welcome-section{
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+    background-position: top center;       
+    position: static
+}
+#welcome-section .welcome{
+    display: flex;     
+    position: relative;
+    justify-content: flex-start;    
+    justify-content: center;
+    align-items: center;     
+}
+#welcome-section h1{
+    font-size: 4rem;
+    position: relative; 
+    text-align: center;
+}
+/* End Welcome Section */
+
+/* Project */
+#projects h1{  
+    padding-top: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: column;    
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#projects .project-tile .container{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;   
+    top: 0;
+    height: 80%;
+    width: 80%;
+}
+#projects .project-item{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%; 
+    height: 100%;
+    overflow: initial;
+}
+#projects .project-info{ 
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+#projects .project-item table{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+} 
+#projects .project-tile .project-item table tr th{
+    padding: 5px;
+    font-size: 2rem;
+}
+#projects .project-item a{
+    text-align: center;
+    padding: 5px;
+    font-size: 2rem;
+}
+.project-image{
+    flex-basis: 50%;
+    width: auto;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+/* Footer */
+#footer .footer{
+    min-height: 10vh;
+    background-color: tan;
+}
+#footer .footer a img{
+    height: 50px;
+    padding: 0px 50px;
+}
+/* End Footer */
+
+/* End Project */
+@media only screen and (min-width: 768px) {
+    /* For tablet: */
+}
